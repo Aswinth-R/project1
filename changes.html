@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    Name <input type="text" placeholder="Enter name" id="name"><br><br>
+    Img address <input type="text" placeholder="Enter img src" id="source"><br><br>
+    Bio <input type="text" placeholder="Enter Bio" id="bio"><br><br>
+    <button onclick="updateBio()"><b>Submit</b></button>
+</div>
+<div>
+    <h1 id="h1">Name</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuDTrYnsPnXIDgb4nuqJnzeHorqlguiv9lDQ&s" alt="" id="src">
+     <h1 id="h2">Bio</h1>
+</div>
+<script>
+    function updateBio(){
+    let Name = document.getElementById("name").value;
+    let img = document.getElementById("source").value;
+    let Bio = document.getElementById("bio").value;
+    document.getElementById("h1").innerHTML=Name;
+    document.getElementById("src").src = img;
+    document.getElementById("h2").innerHTML= Bio;
+    }
+    </script>
+</body>
+</html>
